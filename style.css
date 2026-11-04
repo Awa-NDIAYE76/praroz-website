@@ -13,7 +13,8 @@
 }
 
 .navbar {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 75px;
     margin:auto;
     overflow: hidden;
@@ -109,7 +110,8 @@ ul li a:hover{
 }
 
 .content{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: auto;
     margin: auto;
     color: #fff;
@@ -280,4 +282,65 @@ transition: .4s ease;
 
 .icons ion-icon:hover{
     color: #ff7200;
+}
+
+@media (max-width: 992px){
+    .main{
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+
+    .form{
+        position: static;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 30px auto 0;
+        box-sizing: border-box;
+    }
+    .navbar{
+        height: auto;
+        overflow: hidden;
+        padding: 10px 0;
+    }
+
+    .icon, .menu, .search{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .logo{
+        float: none;
+        padding: 10px 0;
+    }
+
+    ul{
+        float: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ul li{
+        margin: 10px 12px;
+    }
+
+    .search{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .srch{
+        float: none;
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .btn{
+        float: none;
+        margin-top: 0;
+    }
 }
